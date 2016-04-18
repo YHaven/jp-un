@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><!-- <img src="images/logo2.png" alt="Logo"/> --><span lang="company">株式会社日本ユニオン</span></a>
+    </div>
+
+    <div class="nav">
+        <div class="img-slide" >
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/slide-image1.jpg" /></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/slide-image2.jpg" /></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/slide-image3.jpg"  /></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <ul class="block-c">
+            <li class="c-item"></li>
+            <li class="c-item"></li>
+            <li class="c-item"></li>
+            <li class="c-item"></li>
+            <li class="c-item"></li>
+            <li class="c-item"></li>
+        </ul>
+    </div>
+
+
+    <!-- <div class="nav"><span class="nav-title">About Us</span></div>
+    <div class="content">
+        <div class="content-left">
+            <div class="re"></div>
+            <ul class="left-nav">
+                <li class="nav-item"><a href="index.html" lang="home">首页</a></li>
+                <li class="nav-item"><a href="" lang="home">公司概况</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Home</a></li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <div class="re-t">Home>About Us</div>
+            <div class="main-content">
+                
+            </div>
+        </div>
+    </div> -->
+    <div class="footer">
+        
+    </div>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/swiper-3.2.7.jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <script type="text/javascript">
+
+    $(function(){
+        //=======================轮播
+        // var _width = document.body.clientWidth,
+        //     _modheight = _width*340/640,
+        //     _imgheight = _width*460/640;
+        // $('#J_slide').css({'height': _modheight,'overflow':'hidden'});
+        // $('#J_slide').find('img').css({'height': _imgheight,'width':_width,'margin-top':-(_imgheight-_modheight)});
+
+        //轮播图片
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+
+
+
+
+    });
+
+
+        function addSmoothScroll(pointer, namedAnchor) {
+            jQuery(pointer).click(function() {
+                var top = jQuery(namedAnchor).offset().top;
+                var el = (bindobj.sf || bindobj.chr) ? 'body' : 'html';
+                jQuery(el).stop().animate({
+                    scrollTop: top
+                }, 1000, 'easeOutExpo');
+                return false;
+            });
+        }
+    </script>
+</body>
+
+</html>
